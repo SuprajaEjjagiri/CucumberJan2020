@@ -26,7 +26,7 @@ When executive provides "admin" and "admin"
     Examples: 
       | user    | password    |
       | Lalitha | password123 |
-      | John    | Ravi123     |
+      | John    | Ravi1234     |
 
   @datadriven
   Scenario: Search a product
