@@ -1,0 +1,91 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 270570970900,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "sales executive logged into the machine",
+            "match": {
+              "location": "StepDef.sales_executive_logged_into_the_machine()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-01-30T04:57:34.253Z",
+        "line": 32,
+        "name": "Search a product",
+        "description": "",
+        "id": "pixel-store-pos;search-a-product",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 681404700,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Larry searches for products in the search field",
+            "match": {
+              "location": "StepDef.larry_searches_for_products_in_the_search_field(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Head"
+                ]
+              },
+              {
+                "cells": [
+                  "Hand"
+                ]
+              },
+              {
+                "cells": [
+                  "Lap"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59500,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "Larry verifies the product availability",
+            "match": {
+              "location": "StepDef.larry_verifies_the_product_availability()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@datadriven"
+          }
+        ]
+      }
+    ],
+    "name": "Pixel store pos",
+    "description": "",
+    "id": "pixel-store-pos",
+    "keyword": "Feature",
+    "uri": "file:demo28Jan.feature",
+    "tags": []
+  }
+]
