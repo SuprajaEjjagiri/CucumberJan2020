@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.LoginPage;
 
 public class StepDef {
 	WebDriver driver;
@@ -136,5 +137,29 @@ public class StepDef {
 	    // Write code here that turns the phrase above into concrete actions
 	    //throw new cucumber.api.PendingException();
 	}
-	
+	@Given("user navigated to login page")
+	public void user_navigated_to_login_page() {
+	    // Write code here that turns the phrase above into concrete actions
+	   // throw new cucumber.api.PendingException();
+		driver=DriverUtil.getDriver("chrome");
+		driver.get("http://10.232.237.143:443/TestMeApp/fetchcat.htm");
+		LoginPage lp=new LoginPage(driver);
+		lp.signin.click();
+	}
+
+	@When("user enter username and password")
+	public void user_enter_username_and_password() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+		LoginPage.username.sendKeys("Lalitha");
+		LoginPage.password.sendKeys("password123");
+		
+	}
+
+	@Then("user logged is successfully")
+	public void user_logged_is_successfully() {
+	    // Write code here that turns the phrase above into concrete actions
+	    //throw new cucumber.api.PendingException();
+	}
+
 }

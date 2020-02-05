@@ -3,59 +3,115 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
-        "name": "",
+        "line": 2,
+        "name": "User login",
         "description": "",
         "type": "background",
         "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-02-05T09:53:56.688Z",
+        "line": 10,
+        "name": "Login",
+        "description": "",
+        "id": "testmeapp;login;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 270570970900,
+              "duration": 68766919600,
               "status": "passed"
             },
-            "line": 4,
-            "name": "sales executive logged into the machine",
+            "line": 5,
+            "name": "user login to TestMeApp",
             "match": {
-              "location": "StepDef.sales_executive_logged_into_the_machine()"
+              "location": "CaseDef.user_login_to_TestMeapp()"
             },
             "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28123323500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user provides \"adimn\" and \"Password456\" as credentials",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"adimn\"",
+                  "offset": 14
+                },
+                {
+                  "val": "\"Password456\"",
+                  "offset": 26
+                }
+              ],
+              "location": "CaseDef.user_provides_and_as_credentials(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 171200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "login is succesfull",
+            "match": {
+              "location": "CaseDef.login_is_succesfull()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
           }
         ]
       },
       {
-        "start_timestamp": "2020-01-30T04:57:34.253Z",
-        "line": 32,
-        "name": "Search a product",
+        "line": 2,
+        "name": "User login",
         "description": "",
-        "id": "pixel-store-pos;search-a-product",
+        "type": "background",
+        "keyword": "Background",
+        "steps": []
+      },
+      {
+        "start_timestamp": "2020-02-05T09:55:33.644Z",
+        "line": 13,
+        "name": "Adding new category",
+        "description": "",
+        "id": "testmeapp;adding-new-category",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 681404700,
+              "duration": 69600,
               "status": "passed"
             },
-            "line": 33,
-            "name": "Larry searches for products in the search field",
+            "line": 14,
+            "name": "user adds a new category",
             "match": {
-              "location": "StepDef.larry_searches_for_products_in_the_search_field(DataTable)"
+              "location": "CaseDef.user_adds_a_new_category()"
             },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 15,
+            "name": "user adds category name as",
+            "match": {},
             "rows": [
               {
                 "cells": [
-                  "Head"
-                ]
-              },
-              {
-                "cells": [
-                  "Hand"
-                ]
-              },
-              {
-                "cells": [
-                  "Lap"
+                  "Sports"
                 ]
               }
             ],
@@ -63,14 +119,26 @@
           },
           {
             "result": {
-              "duration": 59500,
-              "status": "passed"
+              "duration": 36200,
+              "status": "skipped"
             },
-            "line": 37,
-            "name": "Larry verifies the product availability",
+            "line": 17,
+            "name": "user adds the subcategory under sports category",
             "match": {
-              "location": "StepDef.larry_verifies_the_product_availability()"
+              "location": "CaseDef.user_adds_the_subcategory_under_sports_category(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "Basketball"
+                ]
+              },
+              {
+                "cells": [
+                  "Volleyball"
+                ]
+              }
+            ],
             "keyword": "Then "
           }
         ],
@@ -81,11 +149,11 @@
         ]
       }
     ],
-    "name": "Pixel store pos",
+    "name": "TestMeApp",
     "description": "",
-    "id": "pixel-store-pos",
+    "id": "testmeapp",
     "keyword": "Feature",
-    "uri": "file:demo28Jan.feature",
+    "uri": "file:demo5feb.feature",
     "tags": []
   }
 ]

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: batchTest.TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 84.378 sec
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 152.254 sec

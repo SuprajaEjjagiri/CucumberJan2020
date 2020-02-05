@@ -3,7 +3,13 @@ Feature: Pixel store pos
   Background: 
     Given sales executive logged into the machine
   
-@RegressionTest
+  @Login
+  Scenario: Login functionality
+  Given user navigated to login page
+  When user enter username and password
+  Then user logged is successfully
+  
+
 Scenario: Executive signup
 Given executive is at the signup registration   
 When executive provides "admin" and "admin"
